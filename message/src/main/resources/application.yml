@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: user-service
+  datasource:
+    #   url: jdbc:postgresql://localhost:5432/kafka
+    url: jdbc:postgresql://postgre-db:5432/kafka
+    driverClassName: org.postgresql.Driver
+    username: root
+    password: pass
+  logging:
+    level:
+      root: INFO
+      #web: DEBUG
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  kafka:
+    bootstrap-servers: kafka:9093
+
+
+
+server:
+  port: 1333
